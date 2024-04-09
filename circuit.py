@@ -6,13 +6,16 @@
 # MAGIC %sql
 # MAGIC select "Landmark"
 
+Final code
+
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC #### STEP 1: Extract/ Read
 
 # COMMAND ----------
-
+chnage this to 
+df=spark.read.schema(user_schema)
 df=spark.read.csv("dbfs:/FileStore/tables/raw/circuits.csv",header=True,inferSchema=True)
 
 # COMMAND ----------
