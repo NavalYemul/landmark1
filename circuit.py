@@ -3,21 +3,17 @@
 
 # COMMAND ----------
 
+# MAGIC %sql
+# MAGIC select "Landmark"
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC #### STEP 1: Extract/ Read
 
 # COMMAND ----------
 
-
-
-# COMMAND ----------
-
 df=spark.read.csv("dbfs:/FileStore/tables/raw/circuits.csv",header=True,inferSchema=True)
-
-# COMMAND ----------
-
-# MAGIC %sql
-# MAGIC create database naval
 
 # COMMAND ----------
 
